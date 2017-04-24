@@ -1,0 +1,94 @@
+<div class="body-back">
+	<!-- navbar -->	
+	<div class="phone-box wrap push">
+		<div class="navtop">
+			<div class="nav-left">
+				<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+			</div>
+		    <div class="nav-myfood-name">
+			    <h5 class="pro-link">UI TEST</h5>
+		    </div>
+			<div class="nav-right">
+				<a href="/home/main"><img src="/assets/go-home.gif" class="nav-img"/></a>
+			</div>
+			<div class="clearfix"></div>
+		</div> 
+			
+		<!--리얼 바디-->
+		<div class="main-grid">
+			<div class="main-shade">
+		    	<div class="row">
+					&nbsp;
+				</div>
+			    <br><br><br>
+    			<div class="hot_food">
+    		   <!-- <img src="/assets/hot_food_label.gif" class="hot_food_label"/> -->
+                    <article id="cc-slider">
+                        <input checked="checked" name="cc-slider" id="slide1" type="radio">
+                        <input name="cc-slider" id="slide2" type="radio">
+                        <input name="cc-slider" id="slide3" type="radio">
+                      
+                        <div id="cc-slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <article>
+                                        <img src="/assets/m01.jpg" onclick="DoNav('/home/auto')" style="cursor:pointer;"> 
+                                    </article>
+                                    <article>
+                                        <img src="/assets/m02.jpg" onclick="DoNav('/home/event')" style="cursor:pointer;"> 
+                                    </article>
+                                    <article>
+                                        <img src="/assets/m03.jpg" onclick="DoNav('/home/manual')" style="cursor:pointer;"> 
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                        </div>
+                    </article>	
+                </div>
+                <br><br>
+                <!--
+                <button class="food_dic_label_btn" onclick="DoNav('/home/dic_main')">dictionary</button>
+                <br><br>
+                -->
+                <button class="food_dic_label_btn" onclick="DoNav('/home/test')">Test page</button>
+                <div class="food_dic_label">
+    		         &nbsp;
+    		    </div>
+    		    <div class="food_dic_label">
+    		         &nbsp;
+    		    </div>
+    		    <div class="food_dic_label">
+    		         &nbsp;
+    		    </div>
+                <div class="foot">
+                </div>
+		    </div>	    
+	    </div>
+    </div>
+    
+	<!--사이드바-->
+	<div class="masthead pdng-stn1">
+		<div id="menu" class="sidenav" role="navigation">
+			<div class="wrap-content">
+				<div class="nav-menu text-center">
+					<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+					<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+					<p class="nav-nickname">닉네임</p>
+				<!--<button class="nav-proedit-btn" onclick="DoNav('/users/sign_out')">로그아웃</button>-->
+					<div class="side-go" onclick="DoNav('/home/myfood')">
+						<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+						<p class="side-nemo-label">컨트롤러</p>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/assets/jquery.nicescroll.js"></script>
+<script src="/assets/scripts.js"></script>

@@ -1,0 +1,149 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!-- isotope CDN -->
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/myfood.css">
+</head>
+
+<body>
+	
+<div class="masthead pdng-stn1">
+	<!--사이드바-->
+	<div id="menu" class="sidenav" role="navigation">
+		<div class="wrap-content">
+			<div class="nav-menu text-center">
+				<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+				<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+				<p class="nav-nickname">닉네임</p>
+				<button class="nav-proedit-btn" onclick="DoNav('/users/sign_out')">로그아웃</button>
+				<div class="side-go" onclick="DoNav('/home/myfood')">
+					<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+					<p class="side-nemo-label">컨트롤러</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+</div>
+		
+		
+<div class="phone-box wrap push">
+	<div class="navtop">
+		<div class="nav-left">
+			<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+		</div>
+		<div class="nav-myfood-name">
+			<h5 class="pro-link">UI TEST</h5>
+		</div>
+		<div class="nav-right">
+		    <a href="/home/index"><img src="/assets/go-home.gif" class="nav-img"/></a>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	
+	<!-- TAB JS -->
+	<!-- assets/easyResponsiveTabs2.js -->
+	<script src="/assets/easyResponsiveTabs2.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#horizontalTab').easyResponsiveTabs({
+				type: 'default', //Types: default, vertical, accordion           
+				width: 'auto', //auto or any width like 600px
+				fit: true   // 100% fit in a container
+			});
+		});
+	</script>
+	<!-- TAB JS -->
+						
+	<div class="small_menu">
+		<div id="horizontalTab">
+			  <ul class="small_menu_list">
+				  <li class="small_menu_item small_menu_active" aria-controls="smenu_item_0" role="tab"><span> AUTO </span></li>
+				  <li class="small_menu_item" aria-controls="smenu_item_1" role="tab"><span> EVENT </span></li>
+				  <li class="small_menu_item" aria-controls="smenu_item_2" role="tab"><span> MANUAL </span></li>
+				  <div class="clearfix"></div>
+			  </ul>	
+			  
+			<div class="small_menu_container">
+				
+				<!-- AUTO -->
+				<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_0"><span class="small_menu_arrow"></span></h2>
+				<div class="menu_tab_1 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_0" style="display:block">
+					<br><br><br><br><br>
+					<div class="hohoho grid" style="margin-top: -14px;">
+				    	<div class="element-item transition ㄱ" data-category="transition" style="cursor:pointer;">
+				        	<h5 class="name elename elename">Door</h5>
+				        	<p class="symbol" style="margin-top:20px;">1</p>
+				      	</div>
+				        <div class="element-item transition ㄱ" data-category="transition" style="cursor:pointer;">
+				        	<h5 class="name elename">Valve</h5>
+				        	<p class="symbol" style="margin-top:20px;">2</p>
+				    	</div>
+				        <div class="element-item transition ㄱ" data-category="transition" style="cursor:pointer;">
+				        	<h5 class="name elename">Egress</h5>
+				        	<p class="symbol" style="margin-top:20px;">3</p>
+				        </div>
+				        <div class="element-item transition ㄱ" data-category="transition" style="cursor:pointer;">
+				            <h5 class="name elename">Mission4</h5>
+				            <p class="symbol" style="margin-top:20px;">4</p>
+				        </div>
+				  	</div>
+				</div>
+				<!-- AUTO 끝-->
+
+				
+				<!-- EVENT -->
+				<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_1"><span class="small_menu_arrow"></span></h2>
+				<div class="menu_tab_2 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_1" style="display:block">
+					<div class="element-item transition ㄴ" data-category="transition" style="cursor:pointer;">
+				        <h5 class="name elename">Handclap</h5>
+				        <p class="symbol" style="margin-top:20px;">1</p>
+				    </div>
+				      
+				    <div class="element-item transition ㄴ" data-category="transition" style="cursor:pointer;">
+				        <h5 class="name elename">Handshake</h5>
+				        <p class="symbol" style="margin-top:20px;">2</p>
+				    </div>
+				      
+				    <div class="element-item transition ㄴ" data-category="transition" style="cursor:pointer;">
+				        <h5 class="name elename">Hello</h5>
+				        <p class="symbol" style="margin-top:20px;">3</p>
+				    </div>
+				</div>
+				<!-- EVENT 끝 -->
+				
+				
+				<!-- MANUAL -->
+				<h2 class="small_menu_accordion small_menu_active" role="tab" aria-controls="smenu_item_2"><span class="small_menu_arrow"></span></h2>
+				<div class="menu_tab_1 small_menu_content small_menu_content_active" aria-labelledby="smenu_item_2" style="display:block">
+					<div class="element-item transition ㄷ" data-category="transition" style="cursor:pointer;">
+						<h5 class="name elename">Joint Control</h5>
+					    <p class="symbol" style="margin-top:20px;">1</p>
+			        </div>
+			      
+			        <div class="element-item transition ㄷ" data-category="transition" style="cursor:pointer;">
+			            <h5 class="name elename">Task Control</h5>
+			            <p class="symbol" style="margin-top:20px;">2</p>
+			        </div>
+			      
+			        <div class="element-item transition ㄷ" data-category="transition" style="cursor:pointer;">
+			            <h5 class="name elename">Recog</h5>
+			            <p class="symbol" style="margin-top:20px;">3</p>
+			        </div>
+				</div>
+				<!-- MANUAL 끝 -->
+										
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+<script src="/assets/jquery.nicescroll.js"></script>
+<script src="/assets/scripts.js"></script>
+
+</html>

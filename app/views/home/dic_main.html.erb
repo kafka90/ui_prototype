@@ -1,0 +1,142 @@
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <!-- isotope CDN -->
+  <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.js"></script>
+</head>
+
+<body>
+	<div class="body-back">
+		<div class="phone-box wrap push">
+			<!-- nav -->
+			<div class="navtop">
+				<div class="nav-left">
+					<a href="#menu" class="menu-link"><img src="/assets/left-top.gif" class="nav-img"/></a>
+				</div>
+				<div class="nav-myfood-name">
+					<h5 class="pro-link">UI TEST</h5>
+				</div>
+				<div class="nav-right">
+				    <a href="/home/main"><img src="/assets/go-home.gif" class="nav-img"/></a>
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+					
+			<!--리얼 바디-->
+			<div class="main-grid">
+				<div class="main-shade" style="min-height:500px;">
+					<div id="path" style="margin-top:23px;">&nbsp;</div>
+					<!-- 가나다순 -->
+					<div class="big-demo" data-js-module="hero-demo">
+					  <div id="food_han" style="border:none;">
+					  	<table border="0" width="400" class="food_article_table">
+						    <div class="filters button-group js-radio-button-group">
+						      <button class="btn_al button is-checked" id="all" data-filter="*">*</button>
+						      <button class="btn_al button" id="auto" data-filter=".ㄱ">AUTO</button>
+						      <button class="btn_al button" id="event" data-filter=".ㄴ">EVENT</button>
+						      <button class="btn_al button" id="manual" data-filter=".ㄷ">MANUAL</button></button>
+						    </div>
+					    </table>
+					  </div>
+					
+					  <div class="hohoho grid" id="test01" style="margin-top: -14px;">
+					      <div class="element-item transition ㄱ" id="a1" data-category="transition" style="cursor:pointer;" onClick="viewPathA1()">
+					          <h5 class="name elename elename">Door</h5>
+					          <p class="symbol" style="margin-top:20px;">1</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄱ" id="a2" data-category="transition" style="cursor:pointer;" onClick="viewPathA2()">
+					          <h5 class="name elename">Valve</h5>
+					          <p class="symbol" style="margin-top:20px;">2</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄱ" id="a3" data-category="transition" style="cursor:pointer;" onClick="viewPathA3()">
+					          <h5 class="name elename">Egress</h5>
+					          <p class="symbol" style="margin-top:20px;">3</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄱ" id="a4" data-category="transition" style="cursor:pointer;" onClick="viewPathA4()">
+					          <h5 class="name elename">Mission4</h5>
+					          <p class="symbol" style="margin-top:20px;">4</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄴ" id="e1" data-category="transition" style="cursor:pointer;" onClick="viewPathE1()">
+					          <h5 class="name elename">Handclap</h5>
+					          <p class="symbol" style="margin-top:20px;">1</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄴ" id="e2" data-category="transition" style="cursor:pointer;" onClick="viewPathE2()">
+					          <h5 class="name elename">Handshake</h5>
+					          <p class="symbol" style="margin-top:20px;">2</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄴ" id="e3" data-category="transition" style="cursor:pointer;" onClick="viewPathE3()">
+					          <h5 class="name elename">Hello</h5>
+					          <p class="symbol" style="margin-top:20px;">3</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄴ" id="e4" data-category="transition" style="cursor:pointer;" onClick="viewPathE4()">
+					          <h5 class="name elename">Introduce</h5>
+					          <p class="symbol" style="margin-top:20px;">4</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄷ" id="m1" data-category="transition" style="cursor:pointer;" onClick="viewPathM1()">
+					          <h5 class="name elename">Joint Control</h5>
+					          <p class="symbol" style="margin-top:20px;">1</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄷ" id="m2" data-category="transition" style="cursor:pointer;" onClick="viewPathM2()">
+					          <h5 class="name elename">Task Control</h5>
+					          <p class="symbol" style="margin-top:20px;">2</p>
+					      </div>
+					      
+					      <div class="element-item transition ㄷ" id="m3" data-category="transition" style="cursor:pointer;" onClick="viewPathM3()">
+					          <h5 class="name elename">Recog</h5>
+					          <p class="symbol" style="margin-top:20px;">3</p>
+					      </div>
+					      <!--
+					      <div id="test02">&nbsp;</div>
+					      <div id="test03">&nbsp;</div>
+					      <div id="test04">&nbsp;</div>
+					      -->
+					  </div>
+				   </div>
+				</div>
+			</div> 	
+			<div class="dicfoot"></div>
+		</div>	
+		
+		<!--사이드바-->
+		<div class="masthead pdng-stn1">
+			<div id="menu" class="sidenav" role="navigation">
+				<div class="wrap-content">
+					<div class="nav-menu text-center">
+						<img class="nav-profile img-circle border-effect" src="/assets/ilguk.png" alt=" ">
+						<img class="side-go nav-camera" onclick="DoNav('/home/myprofile')" src="/assets/camera.gif" alt=" ">
+						<p class="nav-nickname">닉네임</p>
+						<button class="nav-proedit-btn" onclick="DoNav('/users/sign_out')">로그아웃</button>
+						<div class="side-go" onclick="DoNav('/home/myfood')">
+							<img class="side-nemo" src="/assets/my_food.png" alt=" ">
+							<p class="side-nemo-label">컨트롤러</p>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="each_product"></div>
+
+
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="/assets/jquery.nicescroll.js"></script>
+	<script src="/assets/scripts.js"></script>
+	<script src="/assets/isotope-docs.min.js"></script>
+	<script src="/assets/isotope.pkgd.js"></script>
+	<script src="/assets/dic_main.js"></script>
+</body>
