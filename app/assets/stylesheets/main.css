@@ -908,7 +908,7 @@ color:#006dcc;
 	-webkit-border-radius: 13px;
 	-moz-border-radius: 13px;
 	-o-border-radius: 13px;
-    border: 2px solid #006dcc;
+    border: 3px solid #006dcc;
     width: 80%;
     height: 220px;
     margin: 0 auto;
@@ -1083,7 +1083,7 @@ td.indent {
   position: absolute;
   left: 10px;
   top: 0px;
-  font-size: 42px;
+  font-size: 36px;
   font-weight: bold;
   color: white;
 }
@@ -1566,7 +1566,7 @@ input[type="file"] {
 		padding: 0px 0 0;
 	}
 	.main-shade, .main-body {
-		min-height: 235px;
+		min-height: 590px;
 	}
 	.goals h3 {
 		font-size: 22px;
