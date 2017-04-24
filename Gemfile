@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
+#heroku
+gem 'rails_12factor', group: :production
+gem 'sqlite3', group: :development
+gem 'pg', group: :production
 
 gem 'geocoder'
 gem 'gmaps4rails'
